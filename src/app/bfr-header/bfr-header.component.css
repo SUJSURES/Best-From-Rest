@@ -1,0 +1,71 @@
+
+:root{
+  --orange:#ff7800;
+  --black: #130f40;
+  --light-color:#666;
+  --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+  --border:2rem solid rgba(0,0,0,.1);
+  --outline:.1rem solid rgba(0,0,0,.1);
+  --outline-hover:.2rem solid var(--black);
+}
+
+*{
+  font-family: 'Poppins', sans-serif;
+  margin: 0; padding: 0;
+  box-sizing: border-box;
+  outline: none; border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: all.2s linear;
+}
+
+.header{
+  position: fixed;
+  top:0; left:0; right:0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 9%;
+  background:#fff;
+  box-shadow: var(--box-shadow);
+  
+}
+
+.header .logo{
+  font-family: "Audiowide", sans-serif;
+  font-size: 3rem;
+  font-weight: bolder;
+  color:orange;
+}
+
+.header .logo a:hover{
+  font-size: 3rem;
+  font-weight: bolder;
+  color: orange;
+}
+
+.header .navbar a{
+  font-size: 1.7rem;
+  margin: 0 1rem;
+  color: black;
+}
+
+.header .navbar a:hover{
+  font-size: 1.8rem;
+  color:orange;
+}
+
+.header .icons{
+  color: black;
+  font-size: 2rem;
+  margin-right: .3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header .icons i:hover{
+  background: var(--orange);
+  color: var(--orange);
+}
